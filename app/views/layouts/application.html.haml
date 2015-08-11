@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Mdleague
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    .logo 
+      .logo-inner
+        %h1 MDLeague
+        %span World's top markup oportunities and specialists
+    .sign-block
+      %ul
+        %li
+          %a{href: '/'} Sign up
+        %li
+          %a{href: '/'} Sign in
+    %header
+      .container
+        %ul.header-menu
+          %li 
+            %a{href: '/'} Work (#{Work.all.count})
+          %li
+            %a{href: '/'} Companies (#{Company.all.count})
+          %li
+            %a{href: '/'} Specialists (#{Specialists.all.count})
+    %main
+      .container
+        = yield

@@ -1,0 +1,23 @@
+
+// ---------- INDEX PAGE ----------
+
+.propositions-list {
+	width: 100%;
+	li {
+		border-bottom: 0.1em solid darken(#ffffff, 30%);
+	}
+}
+
+.proposition {
+	padding: 0.5em;
+	position: relative;
+	h3,
+	a {
+		display: inline;
+		margin-right: 0.5em;
+	}
+	span {
+    position: absolute;
+    right: 0;
+	}
+}
