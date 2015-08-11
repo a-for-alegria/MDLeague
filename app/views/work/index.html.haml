@@ -4,6 +4,6 @@
       .proposition
         %h3 
           %a{href: '#'} #{work.title}    
-        / %a{href: '/company'} General Assembly
-        %span Posted: #{work.created_at.month work.created_at.day}
+        %a{href: '/company'} General Assembly
+        %span Posted: #{work.created_at.day}/#{work.created_at.month}/#{work.created_at.year}
     
