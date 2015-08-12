@@ -1,8 +1,8 @@
 
 #----------------- WORK -----------------
 
-module WorkSeed
-  work_list = [
+module JobSeed
+  job_list = [
     ['iOs developer', 3500, 'Austin', 'Texas', 'USA'],
     ['Java developer', 2500, 'Austin', 'Texas', 'USA'],
     ['C# developer', 6500, 'Austin', 'Texas', 'USA'],
@@ -16,16 +16,16 @@ module WorkSeed
 
   # Clean up database
 
-  works = Work.all
+  jobs = Job.all
 
-  works.each do |work|
-    work.destroy
+  jobs.each do |job|
+    job.destroy
   end
 
   # Populate
 
-  work_list.each do |title, salary, city, state, country|
-    Work.create(title: title, salary: salary, state: state, country: country)
+  job_list.each do |title, salary, city, state, country|
+    Job.create(title: title, salary: salary, city: city, state: state, country: country)
   end
 end
 

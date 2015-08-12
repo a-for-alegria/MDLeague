@@ -2,11 +2,11 @@
   .left-block.job-description
     %ul
       %li
-        %h2 #{@work.title}
-      %li Posted #{@work.created_at.day}/#{@work.created_at.month}/#{@work.created_at.year}
+        %h2 #{@job.title}
+      %li Posted #{@job.created_at.strftime("%d/%m/%y")}
       %br
-      %li Compensation: #{@work.salary}$/month
-      %li Location: #{@work.city}, #{@work.state}, #{@work.country}
+      %li Compensation: #{@job.salary}$/month
+      %li Location: #{@job.city}, #{@job.state}, #{@job.country}
     %p This role is responsible for guiding students and providing expertise across the three key sections of our online course: Data Analysis, Working with Databases, and Communication and Contextualization of Data. 
     %br
     %p This individual should be an expert in Excel (or other spreadsheet software), comfortable working with SQL, and an excellent communicator with a unique design mindset for building effective data-driven presentation and building influential data dashboards. 
