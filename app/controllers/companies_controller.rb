@@ -6,5 +6,6 @@ class CompaniesController < ApplicationController
 
   def show
     @company = Company.find(params[:id])
+    @random_jobs = Job.all.shuffle
   end
 end

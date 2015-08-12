@@ -13,9 +13,7 @@
   .right-block.company_stats
     %h3 Jobs posted
     %ul.jobs-posted
-      %li 
-        %a{href: '/job'} Data Analysis Mentor
-      %li 
-        %a{href: '/job'} Data Analysis Mentor
-      %li 
-        %a{href: '/job'} Data Analysis Mentor
+      - @random_jobs.first(3).each do |r_job|
+        %li 
+          %a{href: job_path(r_job)} #{r_job.title}
+        
