@@ -4,7 +4,7 @@ Mdleague::Application.routes.draw do
   resources :works
   resources :specialists
 
-  root 'work#index'
+  root 'works#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
