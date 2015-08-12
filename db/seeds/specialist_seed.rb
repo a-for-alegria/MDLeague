@@ -3,15 +3,15 @@
 
 module SpecialistSeed
   spec_list = [
-    [ 'John Doe', 15],
-    [ 'Jane Griffith', 50],
-    [ 'Tory Willson', 30],
-    [ 'Bill Goldberg', 20],
-    [ 'Chris Masters', 10],
-    [ 'Jo Young', 12],
-    [ 'Tajiri', 25],
-    [ 'Chris Sabin', 32],
-    [ 'Chuck Norris', 65]
+    [ 'John Doe', 15, 'Odessa', 'UA'],
+    [ 'Jane Griffith', 50, 'Odessa', 'UA'],
+    [ 'Tory Willson', 30, 'Odessa', 'UA'],
+    [ 'Bill Goldberg', 20, 'Odessa', 'UA', 'Odessa', 'UA'],
+    [ 'Chris Masters', 10, 'Odessa', 'UA'],
+    [ 'Jo Young', 12, 'Odessa', 'UA'],
+    [ 'Tajiri', 25, 'Odessa', 'UA'],
+    [ 'Chris Sabin', 32, 'Odessa', 'UA'],
+    [ 'Chuck Norris', 65, 'Odessa', 'UA']
   ]
 
   # Clean up database
@@ -24,7 +24,7 @@ module SpecialistSeed
 
   # Populate
 
-  spec_list.each do |name, rate|
-    Specialist.create(name: name, rate: rate)
+  spec_list.each do |name, rate, city, country|
+    Specialist.create(name: name, rate: rate, city: city, country: country)
   end
 end
