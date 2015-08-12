@@ -24,7 +24,7 @@
           %li
             %a{href: '/'} Companies (#{Company.all.count})
           %li
-            %a{href: '/'} Specialists (#{Specialist.all.count})
+            %a{href: specialists_path} Specialists (#{Specialist.all.count})
     %main
       .container
         = yield

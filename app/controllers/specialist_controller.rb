@@ -1,2 +1,0 @@
-class SpecialistController < ApplicationController
-end

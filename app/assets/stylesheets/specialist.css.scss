@@ -1,3 +1,53 @@
-// Place all the styles related to the Specialist controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ---------- INDEX PAGE ----------
+
+.specialists-list {
+	width: 100%;
+}
+
+.specialist {
+	width: 100%;
+	height: 7.5em;
+	margin-bottom: 0.33em;
+	background-color: darken(#ffffff, 10%);
+}
+
+.avatar {
+	width: 20%;
+	height: 100%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  img {
+  	width: 100%;
+  	height: 100%;
+  }
+}
+
+.info {
+	width: 80%;
+	height: 100%;
+  display: inline-block;
+  float: right;
+  padding: 0.66em;
+}
+
+/*------------ SPECIALISTS SEARCH BLOCK ------------*/
+
+.specialists-search {
+	min-height: 20em;
+	padding: 0.5em;
+	text-align: center;
+	form {
+		margin-top: 0.66em;
+	}
+	input{
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+}
+
+.search-find {
+	padding: 0.66em;
+}

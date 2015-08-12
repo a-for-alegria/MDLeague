@@ -1,0 +1,21 @@
+.left-block  
+  %ul.specialists-list
+    - @specialists.each do |spec|
+      %li.specialist
+        .avatar
+          = image_tag('avatar.jpg')
+        .info
+          %ul
+            %li 
+              %h3 #{spec.name}
+            %li Odessa, UA
+            %li #{spec.rate}$/hour
+.right-block.specialists-search
+  %h2 Search
+  %form
+    %input{placeholder: 'Country'}
+    %input{placeholder: 'Rate'}
+    %input{placeholder: 'Technology'}
+    %input{placeholder: 'Level'}
+    %br
+    %button.search-find{type: 'submit'} Find
