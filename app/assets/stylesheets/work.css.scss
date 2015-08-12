@@ -21,3 +21,42 @@
     right: 0;
 	}
 }
+
+/*------------ JOB PAGE ------------*/
+
+.job {
+	width: 100%;
+}
+
+.company-info,
+.job-description {
+  padding: 0.5em;
+}
+
+/*------------ Right block*/
+
+.job-description {
+	li {
+		margin-bottom: 0.66em;
+	}
+}
+
+/*------------ Left block*/
+
+.company-info {
+	text-align: center;
+}
+
+.apply-button {
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.company-logo {
+	width: 25%;
+	height: 25%;
+	margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
