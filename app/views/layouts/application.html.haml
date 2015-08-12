@@ -22,7 +22,7 @@
           %li 
             %a{href: '/'} Jobs (#{Job.all.count})
           %li
-            %a{href: '/'} Companies (#{Company.all.count})
+            %a{href: companies_path} Companies (#{Company.all.count})
           %li
             %a{href: specialists_path} Specialists (#{Specialist.all.count})
     %main
