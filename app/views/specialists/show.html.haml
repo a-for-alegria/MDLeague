@@ -1,0 +1,26 @@
+.left-block
+  .profile
+    %span.rate #{@specialist.rate}$/hour
+    %ul
+      %li 
+        .profile-avatar
+          = image_tag('user.png')
+      %li 
+        %h2 #{@specialist.name}
+      %li 
+        %h3 #{@specialist.position}
+      %li #{@specialist.city}, #{@specialist.country}
+    .techs
+      %ul.techs-list
+        %li HTML5
+        %li CSS3
+        %li JavaScript
+        %li jQuery
+        %li Backbone.js
+        %li Angular.js
+        %li React.js
+        %li Node.js
+        %li MongoDB  
+    .resume
+      %h4 Overview
+      %p Over the last 5 years, I have developed a wide range of websites using HTML, CSS and JavaScript including sites for startup companies, digital agencies and business. My core competency lies in development single page applications of different complexity, but also I have experience in leading small groups of front-end developers and end-end management of a new website development projects.

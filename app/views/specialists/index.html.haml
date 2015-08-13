@@ -10,6 +10,8 @@
               %h3 #{spec.name}
             %li #{spec.city}, #{spec.country}
             %li #{spec.rate}$/hour
+          %span.profile-link 
+            =link_to 'view profile', specialist_path(spec)
 .right-block.specialists-search
   %h2 Search
   %form
