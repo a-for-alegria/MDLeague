@@ -7,11 +7,14 @@
       %br
       %li Compensation: #{@job.salary}$/month
       %li Location: #{@job.city}, #{@job.state}, #{@job.country}
-    %p This role is responsible for guiding students and providing expertise across the three key sections of our online course: Data Analysis, Working with Databases, and Communication and Contextualization of Data. 
-    %br
-    %p This individual should be an expert in Excel (or other spreadsheet software), comfortable working with SQL, and an excellent communicator with a unique design mindset for building effective data-driven presentation and building influential data dashboards. 
+    .description
+      %h4 Overview
+      %p This role is responsible for guiding students and providing expertise across the three key sections of our online course: Data Analysis, Working with Databases, and Communication and Contextualization of Data. 
+      %br
+      %p This individual should be an expert in Excel (or other spreadsheet software), comfortable working with SQL, and an excellent communicator with a unique design mindset for building effective data-driven presentation and building influential data dashboards. 
   .right-block.company-info
     .company-logo
-      %a{href: '/company'}
+      - r_company = Company.all.shuffle.first
+      %a{href: company_path(r_company)}
         = image_tag('logo.png')
     %button.apply-button{type: 'submit'} Apply to this position
