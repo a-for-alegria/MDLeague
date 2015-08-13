@@ -1,3 +1,4 @@
+@import 'unity';
 
 // ---------- INDEX PAGE ----------
 
@@ -87,21 +88,5 @@
 	h4 {
 		padding: 15px 0 15px 0;
 		font-weight: bold;
-	}
-}
-
-.techs {
-	margin-top: 10px;
-	width: 100%;
-}
-
-.techs-list {
-	li {
-		display: inline-block;
-		background-color: blue;
-		padding: 5px;
-    color: #ffffff;
-    border-radius: 5px;
-    margin-top: 5px;
 	}
 }

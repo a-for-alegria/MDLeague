@@ -1,0 +1,24 @@
+
+.skills {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.skills-list {
+	li {
+		display: inline-block;
+		background-color: blue;
+		padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 5px;
+	}
+}
+
+.profile,
+.job-description {
+	h4 {
+		padding: 15px 0 15px 0;
+		font-weight: bold;
+	}
+}
