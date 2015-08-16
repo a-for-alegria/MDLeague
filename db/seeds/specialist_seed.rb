@@ -24,7 +24,7 @@ module SpecialistSeed
 
   # Populate
 
-  spec_list.each do |name, rate, city, country, position|
-    Specialist.create(name: name, rate: rate, city: city, country: country, position: position)
-  end
+  # spec_list.each do |name, rate, city, country, position|
+  #   Specialist.create(name: name, rate: rate, city: city, country: country, position: position)
+  # end
 end

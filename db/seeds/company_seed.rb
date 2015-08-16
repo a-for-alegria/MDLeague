@@ -25,8 +25,8 @@ module CompanySeed
 
   # Populate
 
-  company_list.each do |name, url, city, country|
-    Company.create(name: name, url: url, city: city, country: country)
-  end
+  # company_list.each do |name, url, city, country|
+  #   Company.create(name: name, url: url, city: city, country: country)
+  # end
 end
 

@@ -24,8 +24,8 @@ module JobSeed
 
   # Populate
 
-  job_list.each do |title, salary, city, state, country|
-    Job.create(title: title, salary: salary, city: city, state: state, country: country)
-  end
+  # job_list.each do |title, salary, city, state, country|
+  #   Job.create(title: title, salary: salary, city: city, state: state, country: country)
+  # end
 end
 

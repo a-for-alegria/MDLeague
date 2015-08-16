@@ -12,10 +12,8 @@
         %span World's top markup oportunities and specialists
     .sign-block
       %ul
-        %li
-          %a{href: '/'} Sign up
-        %li
-          %a{href: '/'} Sign in
+        %li #{link_to 'Add company', new_company_path}
+        %li #{link_to 'Add specialist', new_specialist_path}
     %header
       .container
         %ul.header-menu
