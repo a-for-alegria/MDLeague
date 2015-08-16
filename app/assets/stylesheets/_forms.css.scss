@@ -1,0 +1,23 @@
+
+/*------------ Devise forms ------------*/
+
+.form-block {
+	width: 50%;
+	margin: 0 auto;
+	padding: 5px;
+	background-color: darken(#ffffff, 5%);
+	h2 {
+		text-align: center;
+	}
+	input {
+		display: block;
+		width: 100%;
+		margin: 10px;
+		padding: 5px;
+	}
+}
+
+.form-lock-fields {
+  width: 70%;
+	margin: 0 auto;
+}
