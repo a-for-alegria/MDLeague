@@ -17,7 +17,8 @@
   .right-block.company_stats
     %h3 Jobs posted
     %ul.jobs-posted
-      - @random_jobs.first(3).each do |r_job|
-        %li 
-          %a{href: job_path(r_job)} #{r_job.title}
+      - if Job.any?
+        - @random_jobs.first(3).each do |r_job|
+          %li 
+            %a{href: job_path(r_job)} #{r_job.title}
         

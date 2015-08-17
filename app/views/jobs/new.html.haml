@@ -1,0 +1,10 @@
+.form-block
+  =form_for(@job)do |f|
+    .form-block-fields
+      =f.text_field :title, placeholder: 'Job title'  
+      =f.text_field :salary, placeholder: 'Salary' 
+      =f.text_field :city, placeholder: 'City'
+      =f.text_field :state, placeholder: 'State' 
+      =f.text_field :country, placeholder: 'Country' 
+
+      =f.submit 'Create'
