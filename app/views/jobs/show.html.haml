@@ -31,4 +31,4 @@
         - r_company = Company.all.shuffle.first 
         %a{href: company_path(r_company)}
           = image_tag('logo.png')
-    %button.apply-button{type: 'submit'} Apply to this position
+    %a.apply-button{href: '#'} Apply to this position

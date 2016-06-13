@@ -8,22 +8,16 @@
   %body
     .logo 
       .logo-inner
-        %h1 MDLeague
-        %span World's top markup oportunities and specialists
-    .sign-block
-      %ul
-        %li #{link_to 'Add company', new_company_path}
-        %li #{link_to 'Add job', new_job_path}
-        %li #{link_to 'Add specialist', new_specialist_path}
+        %h1 RemoteTeams
+        %span Your ideas worth to be done professionaly
     %header
       .container
+        .job-applier
+          %a{href: ''} Post a job(100$/month)
         %ul.header-menu
-          %li 
-            %a{href: '/'} Jobs (#{Job.all.count})
-          %li
-            %a{href: companies_path} Companies (#{Company.all.count})
-          %li
-            %a{href: specialists_path} Specialists (#{Specialist.all.count})
+          %li #{link_to 'Sign in'}
+          %li #{link_to 'Sign up'}
+        %ul.sign-block
     %main
       .container
         = yield

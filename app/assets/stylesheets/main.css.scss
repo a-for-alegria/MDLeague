@@ -43,7 +43,7 @@ li {
 }
 
 a {
-	color: #000000;
+	color: #0000ff;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
@@ -62,7 +62,6 @@ button {
 .container {
 	width: 60%;
 	margin: 0 auto;
-	padding-top: 0.66em;
 }
 
 .left-block {
@@ -94,16 +93,6 @@ button {
   transform: translateY(-50%);
 }
 
-.sign-block {
-	position: absolute;
-	top: 1em;
-	right: 1em;
-	li {
-		display: inline;
-		margin-right: 1em;
-	}
-}
-
 /*------------ Header*/
 
 header {
@@ -111,11 +100,26 @@ header {
 	background-color: darken(#ffffff, 20%);
 }
 
+.job-applier,
 .header-menu {
-	width: 100%;
-	padding: 1em;
+	padding: 1em 0 1em 0;
+}
+
+.job-applier {
+	width: 70%;
+	float: left;
+	a {
+		font-weight: bold;
+	}
+}
+
+.header-menu {
+	width: 30%;
+	display: inline-block;
+  text-align: right;
 	li {
-		display: inline;
+		display: inline-block;
 		margin-right: 1em;
+    &:last-child {margin: 0;}		
 	}
 }
