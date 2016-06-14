@@ -45,16 +45,12 @@ li {
 a {
 	color: #0000ff;
 	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
+	&:hover {text-decoration: underline;}
 }
 
 button {
 	&:hover,
-	&:active {
-		cursor: pointer;
-	}
+	&:active {cursor: pointer;}
 }
 
 /*------------ Layout styles ------------*/
@@ -91,6 +87,10 @@ button {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  a {
+  	color: #000000;
+  	&:hover {text-decoration: none;}
+  }
 }
 
 /*------------ Header*/
@@ -101,16 +101,12 @@ header {
 }
 
 .job-applier,
-.header-menu {
-	padding: 1em 0 1em 0;
-}
+.header-menu {padding: 1em 0 1em 0;}
 
 .job-applier {
 	width: 70%;
 	float: left;
-	a {
-		font-weight: bold;
-	}
+	a {font-weight: bold;}
 }
 
 .header-menu {

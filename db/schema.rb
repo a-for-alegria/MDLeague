@@ -11,35 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150817062344) do
-
-  create_table "companies", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "url"
-    t.string   "city"
-    t.string   "country"
-  end
-
-  create_table "jobs", force: true do |t|
-    t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "salary"
-    t.string   "city"
-    t.string   "state"
-    t.string   "country"
-  end
-
-  create_table "specialists", force: true do |t|
-    t.string   "name"
-    t.integer  "rate"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "city"
-    t.string   "country"
-    t.string   "position"
-  end
+ActiveRecord::Schema.define(version: 20160614075546) do
 
 end

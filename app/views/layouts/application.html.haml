@@ -8,15 +8,16 @@
   %body
     .logo 
       .logo-inner
-        %h1 RemoteTeams
+        %h1 #{link_to 'RemoteTeams', root_path}
         %span Your ideas worth to be done professionaly
     %header
       .container
         .job-applier
-          %a{href: ''} Post a job(100$/month)
+          #{link_to 'Post a job(100$/month)', new_job_path}
         %ul.header-menu
-          %li #{link_to 'Sign in'}
-          %li #{link_to 'Sign up'}
+          - c = Company.all.shuffle.first
+          %li #{link_to 'Company Name', company_path(c)}
+          %li #{link_to 'Sign up', new_company_path}
         %ul.sign-block
     %main
       .container
