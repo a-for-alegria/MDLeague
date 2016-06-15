@@ -119,3 +119,22 @@ header {
     &:last-child {margin: 0;}		
 	}
 }
+
+/*------------ Footer*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin-top: 1em;
+	background-color: darken(#ffffff, 20%);
+	.acest {
+		padding: 2em 2em 2em 0;
+		display: block;
+	}
+}
+
+.credits {
+	width: 60%;
+	margin: 0 auto;
+}

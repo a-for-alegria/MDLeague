@@ -6,6 +6,9 @@
 	width: 100%;
 	li {
 		border-bottom: 0.1em solid darken(#ffffff, 30%);
+		&:last-child {
+			border: none;
+		}
 	}
 }
 

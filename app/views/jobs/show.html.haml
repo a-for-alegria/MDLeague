@@ -5,9 +5,8 @@
         %h2 #{@job.title}
       %li Posted #{@job.created_at.strftime("%d/%m/%y")}
       %br
-      %li Title: #{@job.format.capitalize}
-      %li Area: #{@job.area.capitalize}
-      %li Location: #{@job.city}, #{@job.country}
+      %li Format: #{@job.format}
+      %li Area: #{@job.area}
     .description
       %h4 Overview
       %p This role is responsible for guiding students and providing expertise across the three key sections of our online course: Data Analysis, Working with Databases, and Communication and Contextualization of Data. 
