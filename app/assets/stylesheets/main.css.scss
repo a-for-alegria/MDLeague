@@ -24,29 +24,17 @@ body {
 	min-height: 100%; 
 }
 
-main {
-	margin-bottom: 1em;
-}
+main {margin-bottom: 1em;}
 
-h1 {
-	font-size: 3em;
-}
+h1 {font-size: 3em;}
 
-h2 {
-	font-size: 2em;
-}
+h2 {font-size: 2em;}
 
-h3 {
-	font-size: 1.5em;
-}
+h3 {font-size: 1.5em;}
 
-h4 {
-	font-size: 1.25em;
-}
+h4 {font-size: 1.25em;}
 
-li {
-	list-style: none;
-}
+li {list-style: none;}
 
 a {
 	color: #0000ff;
@@ -124,20 +112,4 @@ header {
 		margin-right: 1em;
     &:last-child {margin: 0;}		
 	}
-}
-
-/*------------ Footer*/
-
-footer {
-	width: 100%;
-	background-color: darken(#ffffff, 20%);
-	.acest {
-		padding: 2em 2em 2em 0;
-		display: block;
-	}
-}
-
-.credits {
-	width: 60%;
-	margin: 0 auto;
 }

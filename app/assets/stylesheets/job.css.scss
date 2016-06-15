@@ -6,9 +6,7 @@
 	width: 100%;
 	li {
 		border-bottom: 0.1em solid darken(#ffffff, 30%);
-		&:last-child {
-			border: none;
-		}
+		&:last-child {border: none;}
 	}
 }
 
@@ -30,43 +28,31 @@
 .design-jobs-block,
 .support-jobs-block {
 	width: 100%;
-  h2 {
-  	padding: 0.5em;
-  }
+  h2 {padding: 0.5em;}
 }
     
 /*------------ JOB PAGE ------------*/
 
-.job {
-	width: 100%;
-} 
+.job {width: 100%;} 
 
 .company-info,
 .job-description {
   padding: 0.5em;
 }
 
-.description {
-	width: 100%;
-}
+.description {width: 100%;}
 
 /*------------ Right block*/
 
 .job-description {
-	li {
-		margin-bottom: 0.66em;
-	}
+	li {margin-bottom: 0.66em;}
 }
 
 /*------------ Left block*/
 
-.left-block.job-description {
-	span {margin: 0;}
-}
+.left-block.job-description {span {margin: 0;}}
 
-.company-info {
-	text-align: center;
-}
+.company-info {text-align: center;}
 
 .apply-button {
 	padding: 1em;
@@ -77,9 +63,7 @@
 	width: 25%;
 	height: 25%;
 	margin: 0 auto;
-  img {
-    width: 100%;
-  }
+  img {width: 100%;}
   li {
   	padding-bottom: 0.25em;
   	&:first-child {
