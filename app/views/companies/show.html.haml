@@ -11,14 +11,26 @@
       %li 
         %a{href: "#{@company.url}", target: 'blank'} #{@company.url}
       %li #{@company.city}, #{@company.country}  
+      %li Programming, Design
     .description
       %h4 Overview
       %p Formstack is a 9 year old company with its roots in Indianapolis. Our customers span 110 different countries, and our employees live and work across the U.S. and the globe.  We have employees in: Oklahoma, North Carolina, Illinois, California, Kentucky, Poland, Georgia, Canada, the Netherlands, Pennsylvania, Georgia, Indiana, Texas, Colorado, & Maryland. We provide a remote work environment that is flexible and provides great freedom for those who can perform.  With that said, relocation is not required for those located outside Indianapolis.
+    .skills
+      %h4 Main skills
+      %ul.skills-list
+        %li HTML5
+        %li CSS#
+        %li Sass/SCSS
+        %li flexbox
+        %li responsive markup
   .right-block.company_stats
-    %h3 Jobs posted
+    %h4 Jobs posted
     %ul.jobs-posted
       - if Job.any?
         - @random_jobs.first(3).each do |r_job|
           %li 
             %a{href: job_path(r_job)} #{r_job.title}
-        
+            .jobs-posted-status
+              %span #{r_job.created_at.strftime("%d/%m/%y")}
+              %span.job-current-state Active
+          %br    

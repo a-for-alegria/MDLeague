@@ -39,7 +39,7 @@
 
 .job {
 	width: 100%;
-}
+} 
 
 .company-info,
 .job-description {
@@ -59,6 +59,10 @@
 }
 
 /*------------ Left block*/
+
+.left-block.job-description {
+	span {margin: 0;}
+}
 
 .company-info {
 	text-align: center;

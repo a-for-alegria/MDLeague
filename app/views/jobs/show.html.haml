@@ -3,6 +3,8 @@
     %ul
       %li
         %h2 #{@job.title}
+        %br
+        %span.job-current-state Active
       %li Posted #{@job.created_at.strftime("%d/%m/%y")}
       %br
       %li Format: #{@job.format}
