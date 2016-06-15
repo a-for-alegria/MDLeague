@@ -1,10 +1,34 @@
 %ul.propositions-list
-  - @jobs.each do |job|
-    %li
-      .proposition
-        %h3 
-          %a{href: job_path(job)} #{job.title}   
-        - r_company = Company.all.shuffle.first 
-        = r_company.name
-        %span Posted: #{job.created_at.strftime("%d/%m/%y")}
-    
+  .programming-jobs-block
+    %h2 Programming
+    - @jobs.each do |job|
+      - 5.times do
+        %li
+          .proposition
+            %h3 
+              %a{href: job_path(job)} #{job.title}   
+            - r_company = Company.all.shuffle.first 
+            = r_company.name
+            %span Posted: #{job.created_at.strftime("%d/%m/%y")}
+  .design-jobs-block
+    %h2 Design
+    - @jobs.each do |job|
+      - 5.times do
+        %li
+          .proposition
+            %h3 
+              %a{href: job_path(job)} #{job.title}   
+            - r_company = Company.all.shuffle.first 
+            = r_company.name
+            %span Posted: #{job.created_at.strftime("%d/%m/%y")}
+  .support-jobs-block
+    %h2 Support
+    - @jobs.each do |job|
+      - 5.times do
+        %li
+          .proposition
+            %h3 
+              %a{href: job_path(job)} #{job.title}   
+            - r_company = Company.all.shuffle.first 
+            = r_company.name
+            %span Posted: #{job.created_at.strftime("%d/%m/%y")}

@@ -5,8 +5,9 @@
         %h2 #{@job.title}
       %li Posted #{@job.created_at.strftime("%d/%m/%y")}
       %br
-      %li Compensation: #{@job.salary}$/month
-      %li Location: #{@job.city}, #{@job.state}, #{@job.country}
+      %li Title: #{@job.format.capitalize}
+      %li Area: #{@job.area.capitalize}
+      %li Location: #{@job.city}, #{@job.country}
     .description
       %h4 Overview
       %p This role is responsible for guiding students and providing expertise across the three key sections of our online course: Data Analysis, Working with Databases, and Communication and Contextualization of Data. 
@@ -20,15 +21,14 @@
         %li Sass/SCSS
         %li flexbox
         %li responsive markup
-      %h4 Secondary requirements
-      %ul.skills-list
-        %li Angular.js
-        %li Visual Studio
-        %li Git
   .right-block.company-info
+    - r_company = Company.all.shuffle.first 
     .company-logo
-      - if Company.any?   
-        - r_company = Company.all.shuffle.first 
-        %a{href: company_path(r_company)}
-          = image_tag('logo.png')
-    %a.apply-button{href: '#'} Apply to this position
+      %a{href: company_path(r_company)}
+        = image_tag('logo.png')
+      %ul
+        %li #{r_company.name}
+        %li #{r_company.city}
+        %li 
+          %a{href: "#{r_company.url}", target: 'blank'} #{r_company.url}
+    %button.apply-button Apply to this position
